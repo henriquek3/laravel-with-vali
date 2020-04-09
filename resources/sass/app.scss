@@ -1,5 +1,6 @@
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url(https://fonts.googleapis.com/css?family=Exo+2&display=swap);
 
 // Variables
 @import 'variables';
@@ -7,3 +8,37 @@
 // Bootstrap
 //@import '~bootstrap/scss/bootstrap';
 @import "~vali-admin/src/sass/main";
+
+.app-sidebar__toggle {
+    @extend .fas;
+    padding: 15px 15px;
+    font-family: $font-family-icon;
+    color: #fff;
+    line-height: 2.4;
+    transition: background-color 0.3s ease;
+    @media(max-width: 767px) {
+        order: -1;
+    }
+
+    &:before {
+        content: '\f0c9';
+        font-size: 21px;
+    }
+
+    &:focus,
+    &:hover {
+        color: #fff;
+        background-color: darken($primary-color, 10);
+        text-decoration: none;
+    }
+}
+
+.app-header__logo {
+    font-family: 'Exo 2', sans-serif;
+}
+
+// Icons
+@import "~@fortawesome/fontawesome-free/scss/fontawesome";
+@import "~@fortawesome/fontawesome-free/scss/brands";
+@import "~@fortawesome/fontawesome-free/scss/regular";
+@import "~@fortawesome/fontawesome-free/scss/solid";

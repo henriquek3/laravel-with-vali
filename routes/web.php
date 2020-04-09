@@ -20,4 +20,9 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/dash', 'HomeController@themeDefault');
+Route::get('/dashboard', 'HomeController@index');
+Route::get('/bootstrap-components', 'HomeController@bootstrapComponents');
+Route::get('/form-components', 'HomeController@formComponents');
+Route::get('/form-custom', 'HomeController@formCustom');
+Route::get('/form-samples', 'HomeController@formSamples');
+Route::get('/form-notifications', 'HomeController@formNotifications');

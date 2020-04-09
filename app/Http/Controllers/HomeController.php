@@ -23,11 +23,36 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        return view('index');
     }
 
     public function themeDefault()
     {
         return view('vali-default-theme');
+    }
+
+    public function bootstrapComponents()
+    {
+        return view('bootstrap-components');
+    }
+
+    public function formComponents()
+    {
+        return view('form-components');
+    }
+
+    public function formCustom()
+    {
+        return view('form-custom');
+    }
+
+    public function formSamples()
+    {
+        return view('form-samples');
+    }
+
+    public function formNotifications()
+    {
+        return view('form-notifications');
     }
 }
